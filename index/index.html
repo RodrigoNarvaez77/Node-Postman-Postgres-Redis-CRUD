@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Básico</title>
+    <script src="index.js" defer></script>
+    <script src="index2.js" defer></script>
+    <script src="index3.js" defer></script>
+    <script src="index4.js" defer></script>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <!-- Formulario para agregar una nueva persona -->
+    <h2>Agregar Persona</h2>
+    <form id="personForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="lastname">Apellido:</label>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+        
+        <label for="nationality">Nacionalidad:</label>
+        <input type="text" id="nationality" name="nationality"><br><br>
+        
+        <label for="year">Edad:</label>
+        <input type="number" id="year" name="year"><br><br>
+
+        <label for="company">Compañía:</label>
+        <input type="text" id="company" name="company" required><br><br>
+
+        <label for="initContract">Inicio del Contrato:</label>
+        <input type="date" id="initContract" name="initContract"><br><br>
+
+        <label for="finishContract">Fin del Contrato:</label>
+        <input type="date" id="finishContract" name="finishContract"><br><br>
+
+        <label for="position">Posición:</label>
+        <input type="text" id="position" name="position"><br><br>
+
+        <button id ='boton' type="button">Enviar</button>
+    </form>
+
+    <!-- Formulario para actualizar una persona existente -->
+    <h2>Actualizar Persona</h2>
+    <form id="updatePersonForm">
+        <p>Ingresar ID  a Modificar</p>
+        <label for="updateName">ID:</label>
+        <input type="text" id="updateid" required>
+        <button type="button" id="boton4">Seleccionar</button>
+        <br><br>
+        <label for="updateName">Nombre:</label>
+        <input type="text" id="updateName" required>
+        <br><br>
+        <label for="updateLastname">Apellido:</label>
+        <input type="text" id="updateLastname" required>
+        <br><br>
+        <label for="updateNacionalidad">Nacionalidad:</label>
+        <input type="text" id="updateNacionalidad" required>
+        <br><br>
+        <label for="updateEdad">Edad:</label>
+        <input type="number" id="updateEdad" required>
+        <br><br>
+        <label for="updateCompany">Compañía:</label>
+        <input type="text" id="updateCompañia" readonly>
+        <br><br>
+        <label for="updateIniciocontrato">Inicio Contrato:</label>
+        <input type="text" id="updateIniciocontrato" readonly>
+        <br><br>
+        <label for="updateFinalcontrato">Final Contrato:</label>
+        <input type="text" id="updateFinalcontrato" readonly>
+        <br><br>
+        <label for="updatePosition">position:</label>
+        <input type="text" id="updatePosition" readonly>
+        <br><br>
+        <button type="button" id="boton5" onclick="modificar2()">Actualizar Persona</button>
+    </form>
+
+    <!-- Botón para eliminar una persona por ID -->
+    <h2>Eliminar Persona</h2>
+    <form id="deletePersonForm">
+        <label for="deleteId">ID:</label>
+        <input type="number" id="deleteId" required>
+        <button id="boton3" type="button" >Eliminar Persona</button>
+    </form>
+
+    <!-- Mostrar la lista de personas -->
+    <h2>Lista de Personas</h2>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Edad</td>
+            <td>Nacionalidad</td>
+            <td>Compañia</td>
+            <td>Inicio Contrato</td>
+            <td>Final Contrato</td>
+            <td>Posicion</td>
+        </tr>
+        <tbody id = "tmostrar"></tbody>	
+    </table>
+</body>
+</html>

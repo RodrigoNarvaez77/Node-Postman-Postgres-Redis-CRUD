@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.4",
+    "pg": "^8.12.0",
+    "redis": "^4.7.0",
+    "sequelize": "^6.37.3"
+  },
+  "name": "tarea1",
+  "version": "1.0.0",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Person.js",
+    "dev": "nodemon Person.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
